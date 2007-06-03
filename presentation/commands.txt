@@ -1,15 +1,33 @@
+====================
+Ubuntu 7.04 desktop
+Change resolution 1680x1050
+Mouse Acceleration and Sensitivity 
+Terminal scrollback
+
+===================
+Install Ruby:
 $ sudo apt-get update
-$ sudo apt-get install ruby
+$ sudo apt-get install ruby (includes rubygems)
+$ sudo apt-get install rdoc
+- Recommended to build ruby from source on linux, debian packages it strangely
 
 ====================
-
-$ wget gems
-$ setup gems
+Install Rails
 $ gem install rails --include-dependencies
-$ gem 
 
 
 
+====================
+Download and Unzip JsUnit
+$ cd
+$ wget http://easynews.dl.sourceforge.net/sourceforge/jsunit/jsunit2.2alpha11.zip
+$  unzip jsunit2.2alpha11.zip
+
+====================
+Download Selenium
+$ cd
+$ wget http://release.openqa.org/selenium-core/0.8.2/selenium-core-0.8.2.zip
+$ unzip selenium-core-0.8.2.zip
 
 
 
