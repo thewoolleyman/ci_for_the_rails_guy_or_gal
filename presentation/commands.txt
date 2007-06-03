@@ -42,16 +42,78 @@ $ mysql -u root
 mysql> create database mysite_development;
 mysql> create database mysite_test;
 mysql> create database mysite_development;
+mysql> create database mysite_production;
+(prod needed because cruise complained if it was not there)
+
+====================
+Hack mysql config to be what Rails wants
+$ sudo /etc/init.d/mysql stop
+$ sudo nano /etc/mysql/my.cnf
+# change /var/run/mysqld/mysqld.sock to /tmp/mysql.sock (no d, 3x)
+$ sudo nano /etc/mysql/debian.cnf
+# same change (2x)
+$ sudo /etc/init.d/mysql start
+
+====================
+Create a rails migration and db table
+$ ruby script/generate migration CreateUserTable
+$ nano db/migrate/001_create_user_table.rb
+  def self.up
+    create_table "users" do |t|
+      t.column "name", :string
+    end    
+  end
+
+  def self.down
+    drop_table "test"
+  end
+$ rake db:migrate
+====================
+Remove default index.html and create a page
+$ cd mysite
+$ rm mysite/public/index.html
+$ ruby script/generate scaffold User
+$ nano test/functional/users_controller_test.rb
+# change "users(:first)" to "users(:one)"
+
+====================
+Make a unit test
+$ cd mysite
+$ nano test/unit/dummy_test.rb
+require File.dirname(__FILE__) + '/../test_helper'
+require 'test/unit'
+
+class DummyTest < Test::Unit::TestCase
+  def test_dummy
+    assert(true)
+  end
+end
 
 =====================
 Test rails site
-$ cd mysite
+$ rake  # should pass
 $ ruby script/server
 $ firefox http://localhost:3000
 
 =====================
 Import site into subversion
+$ cd
+$ rm -rf mysite/log/*
+$ rm -rf mysite/db/schema.rb
 $ svn import mysite file:///home/ci/repo/mysite -m "import"
+$ rm -rf mysite
+$ svn co file:///home/ci/repo/mysite mysite
+
+=====================
+Set svn:ignores
+$ cd mysite
+$ export EDITOR=nano
+$ svn propedit svn:ignore log
+*
+$ svn propedit svn:ignore db
+schema.rb
+$ svn ci log -m "ignores"
+$ svn ci db -m "ignores"
 
 =====================
 Download and unzip CruiseControl.rb
@@ -66,9 +128,53 @@ $ ./cruise add MySite --url file:///home/ci/repo/mysite
 $ ./cruise start
 
 ====================
+View cruisecontrol web page
+$ firefox localhost:3333
+# click MySite
+# Should be passing
+
+====================
+Add cruise task to Rakefile
+$ nano Rakefile
+# Add cruise task:
+task :cruise do
+  Rake::Task['test'].invoke
+end
+$ svn ci Rakefile -m "add cruise task"
+# Check cruise webpage, should still be passing
+
+====================
 Download and Unzip JsUnit
 $ wget http://easynews.dl.sourceforge.net/sourceforge/jsunit/jsunit2.2alpha11.zip
-$  unzip jsunit2.2alpha11.zip
+$ unzip jsunit2.2alpha11.zip
+
+====================
+Copy jsunit to your app and check in
+$ cd mysite/public/javascripts
+$ mv /home/ci/jsunit .
+$ svn add jsunit
+$ svn ci -m "add jsunit"
+
+====================
+Create a jsunit test
+$ mkdir test-pages
+$ nano test-pages/dummy_js_test.html
+<html>
+<head>
+  <script language="JavaScript" type="text/javascript" src="../jsunit/jsunit/app/jsUnitCore.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../jsunit/jsunit/app/jsUnitCore.js"></script>
+  <script language="javascript">
+    function testAssert() {
+      flag = true;
+      assertTrue("flag should be true!", flag);
+    }
+  </script>
+</head>
+<body></body>
+</html>
+
+====================
+
 
 ====================
 Download Selenium
@@ -82,7 +188,7 @@ Use rails homepage for selenium test
 Use $w from prototype.js for jsunit test
 
 
-
+/var/run/mysqld/mysqld.sock
 
 
 
