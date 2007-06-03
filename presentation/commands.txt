@@ -7,34 +7,86 @@ Terminal scrollback
 ===================
 Install Ruby:
 $ sudo apt-get update
-$ sudo apt-get install ruby (includes rubygems)
-$ sudo apt-get install rdoc
+$ sudo apt-get install -y ruby (includes rubygems)
+$ sudo apt-get install -y rdoc
+$ sudo apt-get install -y libopenssl-ruby
 - Recommended to build ruby from source on linux, debian packages it strangely
+
+====================
+We will keep everything in the home dir, or "~"
+You can put it wherever you want
+
+===================
+Install MySql (required by default Rails app):
+$ sudo apt-get install -y mysql-server
+
+====================
+Install subversion:
+$ sudo apt-get install -y subversion
+
+====================
+Create Subversion Repo
+$ svnadmin create repo
 
 ====================
 Install Rails
 $ gem install rails --include-dependencies
 
+====================
+Create a rails project
+$ rails mysite
 
+====================
+Create databases for rails project
+$ mysql -u root
+mysql> create database mysite_development;
+mysql> create database mysite_test;
+mysql> create database mysite_development;
+
+=====================
+Test rails site
+$ cd mysite
+$ ruby script/server
+$ firefox http://localhost:3000
+
+=====================
+Import site into subversion
+$ svn import mysite file:///home/ci/repo/mysite -m "import"
+
+=====================
+Download and unzip CruiseControl.rb
+$ wget http://rubyforge.org/frs/download.php/19237/cruisecontrolrb-1.1.0.tgz
+$ tar -zxvf cruisecontrolrb-1.1.0.tgz
+$ mv cruisecontrolrb-1.1.0 cc
+
+=====================
+Set up project in cruisecontrol
+$ cd cc
+$ ./cruise add MySite --url file:///home/ci/repo/mysite
+$ ./cruise start
 
 ====================
 Download and Unzip JsUnit
-$ cd
 $ wget http://easynews.dl.sourceforge.net/sourceforge/jsunit/jsunit2.2alpha11.zip
 $  unzip jsunit2.2alpha11.zip
 
 ====================
 Download Selenium
-$ cd
 $ wget http://release.openqa.org/selenium-core/0.8.2/selenium-core-0.8.2.zip
 $ unzip selenium-core-0.8.2.zip
 
 
 
 
+Use rails homepage for selenium test
+Use $w from prototype.js for jsunit test
 
 
 
 
 
-$ sudo apt-get install subversion
+
+
+
+
+$ sudo apt-get install -y subversion
