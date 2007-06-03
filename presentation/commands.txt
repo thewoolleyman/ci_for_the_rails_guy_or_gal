@@ -65,7 +65,7 @@ $ nano db/migrate/001_create_user_table.rb
   end
 
   def self.down
-    drop_table "test"
+    drop_table "users"
   end
 $ rake db:migrate
 ====================
@@ -76,30 +76,19 @@ $ ruby script/generate scaffold User
 $ nano test/functional/users_controller_test.rb
 # change "users(:first)" to "users(:one)"
 
-====================
-Make a unit test
-$ cd mysite
-$ nano test/unit/dummy_test.rb
-require File.dirname(__FILE__) + '/../test_helper'
-require 'test/unit'
-
-class DummyTest < Test::Unit::TestCase
-  def test_dummy
-    assert(true)
-  end
-end
-
 =====================
 Test rails site
-$ rake  # should pass
+$ rake  # should pass all tests
 $ ruby script/server
-$ firefox http://localhost:3000
+$ firefox http://localhost:3000/users
+# create a user
 
 =====================
 Import site into subversion
 $ cd
 $ rm -rf mysite/log/*
 $ rm -rf mysite/db/schema.rb
+$ rm -rf tmp
 $ svn import mysite file:///home/ci/repo/mysite -m "import"
 $ rm -rf mysite
 $ svn co file:///home/ci/repo/mysite mysite
@@ -108,12 +97,15 @@ $ svn co file:///home/ci/repo/mysite mysite
 Set svn:ignores
 $ cd mysite
 $ export EDITOR=nano
+$ svn propedit svn:ignore .
+tmp
 $ svn propedit svn:ignore log
 *
 $ svn propedit svn:ignore db
 schema.rb
-$ svn ci log -m "ignores"
-$ svn ci db -m "ignores"
+$ svn commit . -m "ignores"
+$ svn commit log -m "ignores"
+$ svn commit db -m "ignores"
 
 =====================
 Download and unzip CruiseControl.rb
@@ -140,7 +132,7 @@ $ nano Rakefile
 task :cruise do
   Rake::Task['test'].invoke
 end
-$ svn ci Rakefile -m "add cruise task"
+$ svn commit Rakefile -m "add cruise task"
 # Check cruise webpage, should still be passing
 
 ====================
@@ -153,20 +145,20 @@ Copy jsunit to your app and check in
 $ cd mysite/public/javascripts
 $ mv /home/ci/jsunit .
 $ svn add jsunit
-$ svn ci -m "add jsunit"
+$ svn commit -m "add jsunit"
 
 ====================
 Create a jsunit test
 $ mkdir test-pages
-$ nano test-pages/dummy_js_test.html
+$ nano test-pages/prototype_test.html
 <html>
 <head>
-  <script language="JavaScript" type="text/javascript" src="../jsunit/jsunit/app/jsUnitCore.js"></script>
-  <script language="JavaScript" type="text/javascript" src="../jsunit/jsunit/app/jsUnitCore.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../jsunit/app/jsUnitCore.js"></script>
+  <script language="JavaScript" type="text/javascript" src="../prototype.js"></script>
   <script language="javascript">
-    function testAssert() {
-      flag = true;
-      assertTrue("flag should be true!", flag);
+    function testPrototypeWordSplit() {
+      string = 'one two three';
+      assertEquals('one', ($w(string))[0]);
     }
   </script>
 </head>
@@ -174,6 +166,25 @@ $ nano test-pages/dummy_js_test.html
 </html>
 
 ====================
+Run the jsunit test manually and commit
+$ cd mysite
+$ ruby script/server
+$ firefox http://localhost:3000/javascripts/jsunit/testRunner.html
+# "Run" http://localhost:3000/javascripts/test-pages/prototype_test.html
+$ svn add public/javascripts/test-pages
+$ svn commit -m "jsunit test"
+
+====================
+Add jsunit to cruise rake task
+$ nano Rakefile
+task :cruise do
+  process = IO.popen("ruby /home/ci/cc/projects/work/script/server")
+  sleep 3
+  Rake::Task['test'].invoke
+  Process.kill(9,process.pid)
+end
+$ svn commit Rakefile -m "add cruise task"
+# Check cruise webpage, should still be passing
 
 
 ====================
@@ -193,6 +204,7 @@ Use $w from prototype.js for jsunit test
 
 
 
+NOTES:
 
-
-$ sudo apt-get install -y subversion
+* that guy - use table pluralization as an example question
+* OCD - but seriously, if you do have OCD, you will make a good CI g[uy|al]
