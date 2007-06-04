@@ -25,6 +25,13 @@ Install subversion:
 $ sudo apt-get install -y subversion
 
 ====================
+Install ant:
+$ sudo apt-get install -y ant
+$ sudo apt-get install ant-optional
+# By default, this uses Gnu java, not Sun's...
+# TODO: verify junit jar is put in ant lib dir
+
+====================
 Create Subversion Repo
 $ svnadmin create repo
 
@@ -99,13 +106,12 @@ $ cd mysite
 $ export EDITOR=nano
 $ svn propedit svn:ignore .
 tmp
+logs
 $ svn propedit svn:ignore log
 *
 $ svn propedit svn:ignore db
 schema.rb
-$ svn commit . -m "ignores"
-$ svn commit log -m "ignores"
-$ svn commit db -m "ignores"
+$ svn commit -m "ignores"
 
 =====================
 Download and unzip CruiseControl.rb
@@ -145,12 +151,14 @@ Copy jsunit to your app and check in
 $ cd mysite/public/javascripts
 $ mv /home/ci/jsunit .
 $ svn add jsunit
+$ svn propedit svn:ignore jsunit # add "logs"
+$ svn propedit svn:executable jsunit/bin/unix/start-firefox.sh 
 $ svn commit -m "add jsunit"
 
 ====================
 Create a jsunit test
-$ mkdir test-pages
-$ nano test-pages/prototype_test.html
+$ mkdir test_pages
+$ nano test_pages/prototype_test.html
 <html>
 <head>
   <script language="JavaScript" type="text/javascript" src="../jsunit/app/jsUnitCore.js"></script>
@@ -166,25 +174,75 @@ $ nano test-pages/prototype_test.html
 </html>
 
 ====================
-Run the jsunit test manually and commit
+Run the jsunit test manually from browser and commit
 $ cd mysite
 $ ruby script/server
 $ firefox http://localhost:3000/javascripts/jsunit/testRunner.html
-# "Run" http://localhost:3000/javascripts/test-pages/prototype_test.html
-$ svn add public/javascripts/test-pages
+# "Run" http://localhost:3000/javascripts/test_pages/prototype_test.html
+$ svn add public/javascripts/test_pages
 $ svn commit -m "jsunit test"
 
 ====================
-Add jsunit to cruise rake task
+"Punt" and make a manual jsunit_start_server script
+# Because automated process management is not TSTTCPW for this tutorial
+# This is also easily ported to a batch file on windows
+$ cd mysite
+$ nano script/jsunit_start_server.sh
+ant -f /home/ci/mysite/public/javascripts/jsunit/build.xml -DbrowserFileNames=/home/ci/mysite/public/javascripts/jsunit/bin/unix/start-firefox.sh -Dport=8081 start_server
+$ svn add script/jsunit_start_server.sh
+$ svn propedit svn:executable script/jsunit_start_server.sh # add 'true' line
+$ script/jsunit_start_server.sh # make sure it starts, ctrl-c to kill it
+$ svn ci -m "add jsunit start script"
+
+====================
+Add jsunit task
+# Not really necessary to extract :alltests, but we'll need it later
 $ nano Rakefile
 task :cruise do
-  process = IO.popen("ruby /home/ci/cc/projects/work/script/server")
-  sleep 3
   Rake::Task['test'].invoke
-  Process.kill(9,process.pid)
+  Rake::Task['jsunit_distributed_test'].invoke
 end
-$ svn commit Rakefile -m "add cruise task"
+
+task :jsunit_distributed_test do
+  `ant -f public/javascripts/jsunit/build.xml -Durl=http://localhost:8080/jsunit/jsunit/testRunner.html?testPage=/jsunit/test_pages/prototype_test.html -DremoteMachineURLs=http://localhost:8081 -DresourceBase=public/javascripts distributed_test`
+  raise "JsUnit Failed" unless $?.success?
+end
+
+=====================
+Commit jsunit task and check cruise
+$ svn commit Rakefile -m "add jsunit_distributed_test task"
 # Check cruise webpage, should still be passing
+
+
+
+
+
+====================
+Refactor rake tasks to start and always stop server, add jsunit stub
+$ nano Rakefile
+task :cruise do
+  begin
+    server_process = IO.popen("ruby /home/ci/cc/projects/MySite/work/script/server")
+    Rake::Task['alltests'].invoke
+    sleep 3 # better to check port
+  ensure
+    Process.kill(9,process.pid)
+  end
+end
+
+task :alltests do
+  Rake::Task['test'].invoke
+  Rake::Task['jsunit'].invoke
+end
+
+task :jsunit do
+end
+
+
+
+
+$ ant -f public/javascripts/jsunit/build.xml "-DbrowserFileNames=/home/ci/cc/projects/MySite/work/public/javascripts/jsunit/bin/unix/start-firefox.sh" -Dport=8081 start_server
+$ ant -f public/javascripts/jsunit/build.xml -Durl=http://localhost:8080/jsunit/jsunit/testRunner.html?testPage=/jsunit/test_pages/prototype_test.html -DremoteMachineURLs=http://localhost:8081 -DresourceBase=public/javascripts distributed_test
 
 
 ====================
