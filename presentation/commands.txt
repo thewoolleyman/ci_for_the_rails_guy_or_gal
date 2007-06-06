@@ -165,6 +165,14 @@ $ svn commit Rakefile -m "add cruise task"
 # Check cruise webpage, should still be passing
 
 ====================
+Tweak firefox for automation
+# open firefox, navigate to 'about:config'
+# search for 'browser.sessionstore.resume_from_crash'
+# toggle to true
+# Preferences - Tabs - uncheck "warn when closing multiple tabs'
+# Maybe turn off update prompts too...
+
+====================
 Download and Unzip JsUnit
 $ wget http://easynews.dl.sourceforge.net/sourceforge/jsunit/jsunit2.2alpha11.zip
 $ unzip jsunit2.2alpha11.zip
