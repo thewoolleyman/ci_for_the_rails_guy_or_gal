@@ -5,16 +5,33 @@ Mouse Acceleration and Sensitivity
 Terminal scrollback
 
 ===================
+Legend
+$ == shell input
+# == comment or instructions
+(nothing) == editor input or stdin
+
+Example:
+# sudo should prompt for a password unless you've sudo's recently
+$ sudo ls
+password
+# should get file list
+
+===================
 Install Ruby:
 $ sudo apt-get update
 $ sudo apt-get install -y ruby (includes rubygems)
 $ sudo apt-get install -y rdoc
 $ sudo apt-get install -y libopenssl-ruby
-- Recommended to build ruby from source on linux, debian packages it strangely
+# Recommended to build ruby from source on linux, debian packages it strangely
 
 ====================
 We will keep everything in the home dir, or "~"
 You can put it wherever you want
+
+===================
+Install Sun java:
+$ sudo apt-get install -y sun-java5-bin
+# accept all prompts
 
 ===================
 Install MySql (required by default Rails app):
@@ -30,6 +47,15 @@ $ sudo apt-get install -y ant
 $ sudo apt-get install ant-optional
 # By default, this uses Gnu java, not Sun's...
 # TODO: verify junit jar is put in ant lib dir
+
+====================
+Install mozilla as an alternate browser
+# because jsunit will kill the browser it is testing
+$ wget http://ftp-mozilla.netscape.com/pub/mozilla.org/mozilla/releases/mozilla1.7.13/mozilla-i686-pc-linux-gnu-1.7.13-installer.tar.gz
+$ tar -zxvf mozilla-i686-pc-linux-gnu-1.7.13-installer.tar.gz
+$ sudo mozilla-installer/mozilla-installer
+# install Navigator only
+$ /usr/local/mozilla/mozilla &
 
 ====================
 Create Subversion Repo
@@ -53,18 +79,15 @@ mysql> create database mysite_production;
 (prod needed because cruise complained if it was not there)
 
 ====================
-Hack mysql config to be what Rails wants
-$ sudo /etc/init.d/mysql stop
-$ sudo nano /etc/mysql/my.cnf
-# change /var/run/mysqld/mysqld.sock to /tmp/mysql.sock (no d, 3x)
-$ sudo nano /etc/mysql/debian.cnf
-# same change (2x)
-$ sudo /etc/init.d/mysql start
+Hack rails database.yml to match debian defaults
+$ gedit config/database.yml
+# add the following entry to all three databases
+socket: /var/run/mysqld/mysqld.sock
 
 ====================
 Create a rails migration and db table
 $ ruby script/generate migration CreateUserTable
-$ nano db/migrate/001_create_user_table.rb
+$ gedit db/migrate/001_create_user_table.rb
   def self.up
     create_table "users" do |t|
       t.column "name", :string
@@ -80,7 +103,7 @@ Remove default index.html and create a page
 $ cd mysite
 $ rm mysite/public/index.html
 $ ruby script/generate scaffold User
-$ nano test/functional/users_controller_test.rb
+$ gedit test/functional/users_controller_test.rb
 # change "users(:first)" to "users(:one)"
 
 =====================
@@ -133,7 +156,7 @@ $ firefox localhost:3333
 
 ====================
 Add cruise task to Rakefile
-$ nano Rakefile
+$ gedit Rakefile
 # Add cruise task:
 task :cruise do
   Rake::Task['test'].invoke
@@ -158,7 +181,7 @@ $ svn commit -m "add jsunit"
 ====================
 Create a jsunit test
 $ mkdir test_pages
-$ nano test_pages/prototype_test.html
+$ gedit test_pages/prototype_test.html
 <html>
 <head>
   <script language="JavaScript" type="text/javascript" src="../jsunit/app/jsUnitCore.js"></script>
@@ -184,10 +207,10 @@ $ svn commit -m "jsunit test"
 
 ====================
 "Punt" and make a manual jsunit_start_server script
-# Because automated process management is not TSTTCPW for this tutorial
+# Because automated process management is not TSTTCPW for this tutorial, and it's hard
 # This is also easily ported to a batch file on windows
 $ cd mysite
-$ nano script/jsunit_start_server.sh
+$ gedit script/jsunit_start_server.sh
 ant -f /home/ci/mysite/public/javascripts/jsunit/build.xml -DbrowserFileNames=/home/ci/mysite/public/javascripts/jsunit/bin/unix/start-firefox.sh -Dport=8081 start_server
 $ svn add script/jsunit_start_server.sh
 $ svn propedit svn:executable script/jsunit_start_server.sh # add 'true' line
@@ -196,73 +219,110 @@ $ svn ci -m "add jsunit start script"
 
 ====================
 Add jsunit task
-# Not really necessary to extract :alltests, but we'll need it later
-$ nano Rakefile
+$ gedit Rakefile
 task :cruise do
   Rake::Task['test'].invoke
   Rake::Task['jsunit_distributed_test'].invoke
 end
 
 task :jsunit_distributed_test do
-  `ant -f public/javascripts/jsunit/build.xml -Durl=http://localhost:8080/jsunit/jsunit/testRunner.html?testPage=/jsunit/test_pages/prototype_test.html -DremoteMachineURLs=http://localhost:8081 -DresourceBase=public/javascripts distributed_test`
-  raise "JsUnit Failed" unless $?.success?
+  output = `ant -f public/javascripts/jsunit/build.xml -Durl=http://localhost:8080/jsunit/jsunit/testRunner.html?testPage=/jsunit/test-pages/prototype_test.html -DremoteMachineURLs=http://localhost:8081 -DresourceBase=public/javascripts distributed_test`
+  raise "JsUnit Failed:\n" + output unless $?.success?
 end
 
 =====================
 Commit jsunit task and check cruise
 $ svn commit Rakefile -m "add jsunit_distributed_test task"
 # Check cruise webpage, should still be passing
-
-
-
-
+# Note that jsunit will kill firefox. 
 
 ====================
-Refactor rake tasks to start and always stop server, add jsunit stub
-$ nano Rakefile
+Download Selenium Remote Control
+$ wget http://release.openqa.org/selenium-remote-control/0.8.1/selenium-remote-control-0.8.1.zip
+$ unzip selenium-remote-control-0.8.1.zip
+
+====================
+Make a manual selenium_start_server script
+$ cd mysite
+$ cp /home/ci/selenium-remote-control-0.8.1/server/selenium-server.jar lib
+$ svn add lib/selenium-server.jar
+$ gedit script/selenium_start_server.sh
+java -jar /home/ci/mysite/lib/selenium-server.jar
+$ svn add script/selenium_start_server.sh
+$ svn propedit svn:executable script/selenium_start_server.sh # add 'true' line
+$ script/selenium_start_server.sh # make sure it starts, ctrl-c to kill it
+$ svn ci -m "add selenium start script and jar"
+
+====================
+Set up selenium test dir and copy ruby API file
+$ cd mysite
+$ mkdir test/selenium
+$ cp ~/selenium-remote-control-0.9.0/ruby/selenium.rb test/selenium
+
+====================
+Create selenium test stub
+$ gedit test/selenium/user_test.rb
+require 'test/unit'
+require File.expand_path(File.dirname(__FILE__) + '/selenium')
+
+class UserTest < Test::Unit::TestCase
+  include SeleniumHelper
+  
+  def setup
+    @selenium = Selenium::SeleniumDriver.new("localhost", 4444, "*firefox", "http://localhost:3000/", 10000);
+    @selenium.start
+  end
+
+  def teardown
+    @selenium.stop
+  end
+
+  def test_user_add_flow
+  end    
+end
+
+====================
+Fill in selenium test stub
+$ gedit test/selenium/user_test.rb
+  def test_user_add_flow
+    timestamp = Time.new.to_s
+    user_name = 'joe ' + timestamp
+    open "/users"
+    click "link=New user"
+    sleep 2 # <- Sleeping is bad! Write a wait_for loop...
+    type "id=user_name", user_name
+    click "commit"
+    sleep 2
+    assert is_text_present(user_name)
+  end    
+
+====================
+Create selenium_test rake task including start and stop of server
+$ gedit Rakefile
 task :cruise do
+  ...
+  Rake::Task['selenium_test'].invoke
+end
+
+task :selenium_test do
   begin
-    server_process = IO.popen("ruby /home/ci/cc/projects/MySite/work/script/server")
-    Rake::Task['alltests'].invoke
-    sleep 3 # better to check port
+    process = IO.popen("ruby /home/ci/cc/projects/MySite/work/script/server")
+    output = `ruby test/selenium/user_test.rb`
+    raise "Selenium Failed:\n" + output unless $?.success?
   ensure
     Process.kill(9,process.pid)
   end
 end
 
-task :alltests do
-  Rake::Task['test'].invoke
-  Rake::Task['jsunit'].invoke
-end
-
-task :jsunit do
-end
-
-
-
-
-$ ant -f public/javascripts/jsunit/build.xml "-DbrowserFileNames=/home/ci/cc/projects/MySite/work/public/javascripts/jsunit/bin/unix/start-firefox.sh" -Dport=8081 start_server
-$ ant -f public/javascripts/jsunit/build.xml -Durl=http://localhost:8080/jsunit/jsunit/testRunner.html?testPage=/jsunit/test_pages/prototype_test.html -DremoteMachineURLs=http://localhost:8081 -DresourceBase=public/javascripts distributed_test
-
-
-====================
-Download Selenium
-$ wget http://release.openqa.org/selenium-core/0.8.2/selenium-core-0.8.2.zip
-$ unzip selenium-core-0.8.2.zip
-
-
-
-
-Use rails homepage for selenium test
-Use $w from prototype.js for jsunit test
-
 
 /var/run/mysqld/mysqld.sock
 
-
-
+TODO:
+Add firefox tweak section - no tab errors, no crash prompt, mention updates.
 
 NOTES:
 
-* that guy - use table pluralization as an example question
-* OCD - but seriously, if you do have OCD, you will make a good CI g[uy|al]
+* obligatory joke section
+* OCD - but seriously, if you do have OCD, you might make a good CI g(uy|al) - because there's a lot of moving parts
+* Don't be /That G(uy|al)/ -  "Well, I'm a(n) ____, and if you've read any ____, you'll know that ____..." Thanks, I'd be glad to discuss the merits of table pluralization over beer, but now we're having the presentation, m'kay?
+
