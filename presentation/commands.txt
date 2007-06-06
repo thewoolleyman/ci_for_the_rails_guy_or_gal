@@ -330,8 +330,11 @@ $ svn commit -m "selenium test"
 
 =======================
 Break tests and fix them!
-# cause jsunit/selenium failures, and check them in
+# cause ruby/jsunit/selenium failures, and check them in
 # see cruise go red, then fix them
+# click links for ruby/selenium failures
+# there's a test bug! (next page after too many tests)
+# good to drop DB before each CI run...
 
 /var/run/mysqld/mysqld.sock
 
