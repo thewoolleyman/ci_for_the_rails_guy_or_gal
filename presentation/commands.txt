@@ -255,7 +255,7 @@ $ cd mysite
 $ cp /home/ci/selenium-remote-control-0.8.1/server/selenium-server.jar lib
 $ svn add lib/selenium-server.jar
 $ gedit script/selenium_start_server.sh
-java -jar /home/ci/mysite/lib/selenium-server.jar
+java -jar /home/ci/mysite/lib/selenium-server.jar -interactive
 $ svn add script/selenium_start_server.sh
 $ svn propedit svn:executable script/selenium_start_server.sh # add 'true' line
 $ script/selenium_start_server.sh # make sure it starts, ctrl-c to kill it
@@ -297,7 +297,7 @@ $ gedit test/selenium/user_test.rb
     user_name = 'joe ' + timestamp
     open "/users"
     click "link=New user"
-    sleep 2 # <- Sleeping is bad! Write a wait_for loop...
+    sleep 2 # <- Sleeping is bad! Use a wait_for loop...
     type "id=user_name", user_name
     click "commit"
     sleep 2
@@ -322,6 +322,16 @@ task :selenium_test do
   end
 end
 
+=======================
+Check in and check cruise
+$ svn add test/selenium
+$ svn commit -m "selenium test"
+# check cruise, it should run everything and be green
+
+=======================
+Break tests and fix them!
+# cause jsunit/selenium failures, and check them in
+# see cruise go red, then fix them
 
 /var/run/mysqld/mysqld.sock
 
