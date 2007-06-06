@@ -236,6 +236,7 @@ end
 task :jsunit_distributed_test do
   output = `ant -f public/javascripts/jsunit/build.xml -Durl=http://localhost:8080/jsunit/jsunit/testRunner.html?testPage=/jsunit/test-pages/prototype_test.html -DremoteMachineURLs=http://localhost:8081 -DresourceBase=public/javascripts distributed_test`
   raise "JsUnit Failed:\n" + output unless $?.success?
+  puts "JsUnit tests passed"
 end
 
 =====================
@@ -317,6 +318,7 @@ task :selenium_test do
     process = IO.popen("ruby /home/ci/cc/projects/MySite/work/script/server")
     output = `ruby test/selenium/user_test.rb`
     raise "Selenium Failed:\n" + output unless $?.success?
+    puts "Selenium tests passed"
   ensure
     Process.kill(9,process.pid)
   end
@@ -335,6 +337,7 @@ Break tests and fix them!
 # click links for ruby/selenium failures
 # there's a test bug! (next page after too many tests)
 # good to drop DB before each CI run...
+# This naive implementation has return code bugs (crash if webrick already running)	
 
 /var/run/mysqld/mysqld.sock
 
