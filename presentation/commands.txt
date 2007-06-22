@@ -359,15 +359,8 @@ Break tests and fix them!
 # good to drop DB before each CI run...
 # This naive implementation has return code bugs (crash if webrick already running)	
 
-/var/run/mysqld/mysqld.sock
 
 
 TODO:
 Add firefox tweak section - no tab errors, no crash prompt, mention updates.
-
-NOTES:
-
-* obligatory joke section
-* OCD - but seriously, if you do have OCD, you might make a good CI g(uy|al) - because there's a lot of moving parts
-* Don't be /That G(uy|al)/ -  "Well, I'm a(n) ____, and if you've read any ____, you'll know that ____..." Thanks, I'd be glad to discuss the merits of table pluralization over beer, but now we're having the presentation, m'kay?
 
