@@ -17,6 +17,10 @@ password
 # should get file list
 
 ===================
+
+B. Install Prereqs
+
+===================
 Install Ruby:
 $ sudo apt-get update
 $ sudo apt-get install -y ruby (includes rubygems)
@@ -60,6 +64,10 @@ $ /usr/local/mozilla/mozilla &
 ====================
 Create Subversion Repo
 $ svnadmin create repo
+
+====================
+
+C. Create Sample Rails Project
 
 ====================
 Install Rails
@@ -137,6 +145,10 @@ schema.rb
 $ svn commit -m "ignores"
 
 =====================
+
+D. cruisecontrol.rb setup
+
+====================
 Download and unzip CruiseControl.rb
 $ wget http://rubyforge.org/frs/download.php/19237/cruisecontrolrb-1.1.0.tgz
 $ tar -zxvf cruisecontrolrb-1.1.0.tgz
@@ -171,6 +183,10 @@ Tweak firefox for automation
 # toggle to true
 # Preferences - Tabs - uncheck "warn when closing multiple tabs'
 # Maybe turn off update prompts too...
+
+====================
+
+E. JsUnit setup
 
 ====================
 Download and Unzip JsUnit
@@ -244,6 +260,10 @@ Commit jsunit task and check cruise
 $ svn commit Rakefile -m "add jsunit_distributed_test task"
 # Check cruise webpage, should still be passing
 # Note that jsunit will kill firefox. 
+
+====================
+
+F. Selenium setup
 
 ====================
 Download Selenium Remote Control
@@ -340,6 +360,7 @@ Break tests and fix them!
 # This naive implementation has return code bugs (crash if webrick already running)	
 
 /var/run/mysqld/mysqld.sock
+
 
 TODO:
 Add firefox tweak section - no tab errors, no crash prompt, mention updates.
