@@ -1,0 +1,3 @@
+- upload vmware server
+- screenshots of VM copy
+
