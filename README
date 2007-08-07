@@ -1,6 +1,12 @@
 Tutorial: CI for the Web 2.0 Guy or Gal
 README for Tutorial Resources
 
+Quick Start:
+- Install VMware and license key from /tools
+- Open VM "Ubuntu_With_CI_Downloads"
+- Start the Tutorial
+
+
 A. Directory Contents
 
 - presentation: Contains presentation in OpenOffice format
