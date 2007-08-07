@@ -1,3 +1,4 @@
 - upload vmware server
 - screenshots of VM copy
+- fix vmware server 07 Network Type screenshot
 
