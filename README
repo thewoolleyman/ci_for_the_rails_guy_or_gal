@@ -8,6 +8,7 @@ Quick Start Instructions:
 - Install VMware and license key from /tools
 - Install a RAR uncompress utility from /tools
 - Uncompress the Virtual Machine /virtual_machines/Ubuntu_With_CI_Downloads.rar
+- Review instructional screenshots for opening a VM copy in /presentation/screenshots/03_virtual_machine_copy
 - Open the uncompressed .vmx file "Ubuntu_With_CI_Downloads.vmx" in VMware
 - Start following the Presentation in /presentation/ci_for_the_web_2.0_guy_or_gal.odp.
   - If you want to open the softcopy of the presentation, install latest openoffice from /tools/openoffice, and custom font from /tools/font
