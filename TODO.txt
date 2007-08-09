@@ -1,2 +1,0 @@
-- Test printing
-- Smaller fonts for some terminal slides
