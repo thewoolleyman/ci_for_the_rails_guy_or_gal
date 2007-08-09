@@ -38,6 +38,7 @@ A. Tutorial Resource Directory Contents
   - CI_Completed: Completed Tutorial with all steps completed
 
 B. Installing Font
+- Note: The presentation works best under OpenOffice 2.2.1, available under /tools/openoffice
 - Copy the FreeSansBold font from /tools/font to the correct location for your system:
   - Win: \WINDOWS\Fonts
   - Mac: /Applications/NeoOffice.app/Contents/share/fonts
