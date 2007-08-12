@@ -1,0 +1,32 @@
+support@vmware.com <support@vmware.com> 	Sat, Aug 11, 2007 at 6:14 PM
+To: thewoolleyman@gmail.com
+
+*** Please do not respond to this email ***
+
+Dear Chad Woolley,
+
+Thank you for your interest in evaluating VMware Fusion. We are pleased to
+provide you with a 30-day evaluation serial number
+
+Your evaluation serial number to use when installing VMware Fusion is:
+
+AAL03-7DWQA-N8F9W-25W4A
+
+Please download the VMware Fusion evaluation software from our Web site at:
+http://www.vmware.com/download/fusion
+
+We want to hear about any problems you encounter when using your evaluation
+copy of VMware Fusion. Please report issues using our support request form
+at:
+http://www.vmware.com/requestsupport
+
+Note: To file a support request the evaluation serial number must be
+registered.You can register the serial number from our Web site at:
+http://www.vmware.com/registernow
+
+We hope you enjoy VMware Fusion. Once you've had the opportunity to use your
+evaluation copy of VMware Fusion we look forward to having you as a valued
+long-term customer.
+
+Sincerely,
+The VMware Team
