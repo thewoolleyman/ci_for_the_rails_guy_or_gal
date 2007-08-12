@@ -6,6 +6,8 @@ Quick Start Instructions:
 -------------------------
 - Get the Tutorial Resources off of a USB Key or download from http://thewoolleyweb.com/ci_for_the_web_2.0_guy_or_gal
 - Install VMware and license key from /tools
+  - For Windows, install VMware server - both the "installer" and "win32 client"
+  - For Mac, install VMware Fusion
 - Install a RAR uncompress utility from /tools
 - Uncompress the Virtual Machine /virtual_machines/Ubuntu_With_CI_Downloads.rar
 - Review instructional screenshots for opening a VM copy in /presentation/screenshots/03_virtual_machine_copy
@@ -16,7 +18,7 @@ Quick Start Instructions:
 ----------------------
 Detailed Instructions:
 ----------------------
-A. Tutorial Resource Directory Contents
+Tutorial Resource Directory Contents
 
 - presentation: Contains presentation in OpenOffice format
   - screenshots:   
@@ -37,13 +39,18 @@ A. Tutorial Resource Directory Contents
   - Ubuntu_With_CI_Downloads: Base Ubuntu with VMWare Tools and all downloads required for tutorial, but no steps completed
   - CI_Completed: Completed Tutorial with all steps completed
 
-B. Installing Font
+A. Installing Font
 - If you want to use the OpenOffice file instead of the PDF, you will need to install the font.
 - Note: The presentation works best under OpenOffice 2.2.1, available under /tools/openoffice
 - Copy the FreeSansBold font from /tools/font to the correct location for your system:
   - Win: \WINDOWS\Fonts
   - Mac: /Applications/NeoOffice.app/Contents/share/fonts
   - Linux: /var/lib/openoffice/share/fonts
+
+B. Install VMware
+- The /tools/vmware directory has installation packages and license keys for VMware.  VMware Server is for windows, and VMWare Fusion is for Mac.  They are both currently free, but may not be in the future.  The license keys may also expire.  There are also some copies of "old" license keys, and the old version of VMware.
+  - For Windows, install VMware Server, both the "installation" and "win32 client" packages.  You will then start the client app, and connect to the local server.
+  - For Mac, install the VMware fusion .dmg file.  There was just a new version of VMware Fusion released, but the old version is available in a subdirectory 'just in case'
 
 C. Install VMware Image
 
