@@ -4,7 +4,7 @@ README for Tutorial Resources
 -------------------------
 Quick Start Instructions:
 -------------------------
-- Get the Tutorial Resources off of a USB Key or download from http://thewoolleyweb.com/ci_for_the_web_2.0_guy_or_gal
+- Get the Tutorial Resources off of a DVD, USB Flash Drive or download from http://thewoolleyweb.com/ci_for_the_web_2.0_guy_or_gal
 - Install VMware and license key from /tools
   - For Windows, install VMware server - both the "installer" and "win32 client"
   - For Mac, install VMware Fusion
@@ -18,9 +18,11 @@ Quick Start Instructions:
 ----------------------
 Detailed Instructions:
 ----------------------
-Tutorial Resource Directory Contents
+Tutorial Resource Directory Contents:
 
-- presentation: Contains presentation in OpenOffice format
+(NOTE: DVDs or USB Flash drives distributed during the tutorial may not have the larger files which will not be used, such as the Ubuntu ISO image, Ubuntu_Base, or OpenOffice installation files, but these are availaable on the website)
+
+- presentation: Contains presentation in OpenOffice and PDF format
   - screenshots:   
     - 01a_mac_vmware_fusion_screenshots: Screenshots of Ubuntu VM Creation on Mac VMware Fusion
     - 01b_win_vmware_server_screenshots: Screenshots of Ubuntu VM Creation on Windows VMware Server
@@ -67,7 +69,7 @@ C.1 Instructions for starting with an existing VM Image
 C.2 Instructions for starting from scratch
 
 -  Download Ubuntu ISO from /tools/ubuntu_cd_iso
-- Follow instructions in tutorial and/or screenshots in /presentation/screensots/01...
+- Follow instructions in tutorial and/or screenshots in /presentation/screenshots/01...
 
 D. Completing Tutorial
 
