@@ -1,10 +1,10 @@
-Tutorial: CI for the Web 2.0 Guy or Gal
+Tutorial: CI for the Rails Guy or Gal
 README for Tutorial Resources
 
 -------------------------
 Quick Start Instructions:
 -------------------------
-- Get the Tutorial Resources off of a DVD, USB Flash Drive or download from http://thewoolleyweb.com/ci_for_the_web_2.0_guy_or_gal
+- Get the Tutorial Resources off of a DVD, USB Flash Drive or download from http://thewoolleyweb.com/ci_for_the_rails_guy_or_gal
 - Install VMware and license key from /tools
   - For Windows, install VMware server - both the "installer" and "win32 client"
   - For Mac, install VMware Fusion
@@ -12,7 +12,7 @@ Quick Start Instructions:
 - Uncompress the Virtual Machine /virtual_machines/Ubuntu_With_CI_Downloads.rar
 - Review instructional screenshots for opening a VM copy in /presentation/screenshots/03_virtual_machine_copy
 - Open the uncompressed .vmx file "Ubuntu_With_CI_Downloads.vmx" in VMware
-- Start following the Presentation in /presentation/ci_for_the_web_2.0_guy_or_gal.pdf or .odp.
+- Start following the Presentation in /presentation/ci_for_the_rails_guy_or_gal.pdf or .odp.
   - If you want to open the softcopy OpenOffice of the presentation, install latest openoffice from /tools/openoffice, and custom font from /tools/font
 
 ----------------------
