@@ -1,0 +1,21 @@
+Lightning Talk format
+
+Pecha Kucha (sp?) format
+
+Update text / Test:
+* Use Ruby 1.8.6
+* Use Rails 2.0.2
+* use aptitude, not apt-get
+* Rubygems 1.0.1
+* Verify version of java.  bin vs. jdk?
+* sqlite instead of mysql
+* use alternate browser, not mozilla
+* Is explicit migration generation needed, or will scaffold handle it with sqlite?
+* Still bug in users_controller_test - :one => :first?
+* Use latest cruisecontrol.rb release, update revision references, update bugfix references
+* Use latest selenium
+* Use selenium gem?
+* "Cautious Optimism" - ask Alex/others for a 2-3 slide summary, in 60 point type or higher
+* Add notes to presentation?
+* Metrics - Ryan Davis' "Code Hurter"
+* Mention ways to avoid false positives (rake task exec, system() || raise, File.sh || raise)
