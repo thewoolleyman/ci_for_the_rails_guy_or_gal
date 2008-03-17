@@ -5,22 +5,21 @@ README for Tutorial Resources
 Quick Start Instructions:
 -------------------------
 - Get the Tutorial Resources off of a DVD, USB Flash Drive or download from http://thewoolleyweb.com/ci_for_the_rails_guy_or_gal
-- Install VMware and license key from /tools
+- Install VMware and get a license key from https://www.vmware.com/tryvmware/
   - For Windows, install VMware server - both the "installer" and "win32 client"
   - For Mac, install VMware Fusion
 - Install a RAR uncompress utility from /tools
 - Uncompress the Virtual Machine /virtual_machines/Ubuntu_With_CI_Downloads.rar
 - Review instructional screenshots for opening a VM copy in /presentation/screenshots/03_virtual_machine_copy
 - Open the uncompressed .vmx file "Ubuntu_With_CI_Downloads.vmx" in VMware
-- Start following the Presentation in /presentation/ci_for_the_rails_guy_or_gal.pdf or .odp.
-  - If you want to open the softcopy OpenOffice of the presentation, install latest openoffice from /tools/openoffice, and custom font from /tools/font
+- Start following the Presentation in /presentation/ci_for_the_rails_guy_or_gal.pdf
 
 ----------------------
 Detailed Instructions:
 ----------------------
 Tutorial Resource Directory Contents:
 
-(NOTE: DVDs or USB Flash drives distributed during the tutorial may not have the larger files which will not be used, such as the Ubuntu ISO image, Ubuntu_Base, or OpenOffice installation files, but these are availaable on the website)
+(NOTE: DVDs or USB Flash drives distributed during the tutorial may not have the larger files which will not be used, such as the Ubuntu ISO image, Ubuntu_Base, or OpenOffice installation files, but these are available on the website)
 
 - presentation: Contains presentation in OpenOffice and PDF format
   - screenshots:   
@@ -29,34 +28,24 @@ Tutorial Resource Directory Contents:
     - 02_ubuntu_vm_setup_screenshots: Screenshots of completing Ubuntu VM installation
     - 03_virtual_machine_copy: Screenshots of copying an existing VM
 - tools: Software and other useful downloads
-  - cruisecontrolrb: Copy of cc.rb trunk rev 521
-  - font: FreeSansBold font used in presentation
   - open_office: OpenOffice install packages for multiple platforms
   - stuffit: RAR extract program for Mac
-  - ubuntu_cd_iso: ISO image of Ubuntu Desktop 7.04
-  - vmware: Install packages and temporary license keys for VMware Fusion (mac) and Server (win)
+  - ubuntu_cd_iso: ISO image of Ubuntu Desktop 7.10
+  - vmware: Install packages and URL for getting a VMWare Evaluation Key
   - winrar: RAR extract program for Windows
 - virtual machines: Virtual Machine Images
   - Ubuntu_Base.rar: Base Ubuntu Install
   - Ubuntu_With_CI_Downloads: Base Ubuntu with VMWare Tools and all downloads required for tutorial, but no steps completed
-  - CI_Completed: Completed Tutorial with all steps completed
+  - Completed_CI_Tutorial: Completed Tutorial with all steps completed
 
-A. Installing Font
-- If you want to use the OpenOffice file instead of the PDF, you will need to install the font.
-- Note: The presentation works best under OpenOffice 2.2.1, available under /tools/openoffice
-- Copy the FreeSansBold font from /tools/font to the correct location for your system:
-  - Win: \WINDOWS\Fonts
-  - Mac: /Applications/NeoOffice.app/Contents/share/fonts
-  - Linux: /var/lib/openoffice/share/fonts
-
-B. Install VMware
-- The /tools/vmware directory has installation packages and license keys for VMware.  VMware Server is for windows, and VMWare Fusion is for Mac.  They are both currently free, but may not be in the future.  The license keys may also expire.  There are also some copies of "old" license keys, and the old version of VMware.
+A. Install VMware
+- The /tools/vmware directory has installation packages and a pointer to the URL to sign up for a VMware Evaluation Key.  VMware Server is for windows, and VMWare Fusion is for Mac.  They are both currently free, but may not be in the future.
   - For Windows, install VMware Server, both the "installation" and "win32 client" packages.  You will then start the client app, and connect to the local server.
-  - For Mac, install the VMware fusion .dmg file.  There was just a new version of VMware Fusion released, but the old version is available in a subdirectory 'just in case'
+  - For Mac, install the VMware fusion .dmg file.
 
-C. Install VMware Image
+B. Install VMware Image
 
-C.1 Instructions for starting with an existing VM Image
+B.1 Instructions for starting with an existing VM Image
 
 - Install VMware for your OS from /tools/vmware/...
 - Copy desired VM image from /virtual_machines to the VMware 'Virtual Machines' directory
@@ -66,11 +55,11 @@ C.1 Instructions for starting with an existing VM Image
 - Open the VM using steps in presentation/screenshots/03_virtual_machine_copy
 
 
-C.2 Instructions for starting from scratch
+B.2 Instructions for starting from scratch
 
 -  Download Ubuntu ISO from /tools/ubuntu_cd_iso
 - Follow instructions in tutorial and/or screenshots in /presentation/screenshots/01...
 
-D. Completing Tutorial
+C. Completing Tutorial
 
 - Use the Virtual Machine and follow instructions in presentation

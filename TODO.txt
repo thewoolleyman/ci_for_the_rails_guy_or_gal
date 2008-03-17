@@ -3,11 +3,7 @@ Lightning Talk format
 Pecha Kucha (sp?) format
 
 Update text / Test:
-* Verify version of java.  bin vs. jdk?
-* Use latest cruisecontrol.rb release, update revision references, update bugfix references
-* Use latest selenium
 * Use selenium gem?
 * "Cautious Optimism" - ask Alex/others for a 2-3 slide summary, in 60 point type or higher
 * Add notes to presentation?
-* Metrics - Ryan Davis' "Code Hurter"
 * Mention ways to avoid false positives (rake task exec, system() || raise, File.sh || raise)
