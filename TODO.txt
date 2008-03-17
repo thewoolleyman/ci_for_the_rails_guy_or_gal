@@ -3,15 +3,7 @@ Lightning Talk format
 Pecha Kucha (sp?) format
 
 Update text / Test:
-* Use Ruby 1.8.6
-* Use Rails 2.0.2
-* use aptitude, not apt-get
-* Rubygems 1.0.1
 * Verify version of java.  bin vs. jdk?
-* sqlite instead of mysql
-* use alternate browser, not mozilla
-* Is explicit migration generation needed, or will scaffold handle it with sqlite?
-* Still bug in users_controller_test - :one => :first?
 * Use latest cruisecontrol.rb release, update revision references, update bugfix references
 * Use latest selenium
 * Use selenium gem?
