@@ -7,3 +7,10 @@ Update text / Test:
 * "Cautious Optimism" - ask Alex/others for a 2-3 slide summary, in 60 point type or higher
 * Add notes to presentation?
 * Mention ways to avoid false positives (rake task exec, system() || raise, File.sh || raise)
+
+
+
+copy and paste pdf/newlines
+
+cruise.rb - mention hooks for metrics into notification
+roundhouse - hosted ci+svn services - campfire
