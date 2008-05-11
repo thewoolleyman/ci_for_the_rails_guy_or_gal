@@ -1,6 +1,8 @@
+* update ccrb to newest release.
+
 Screenshot of New Millennium JsUnit UI + tag
 
-More l337x0rz toolz:
+More l337z0rz toolz:
  * selenium gem + polonium + funkytown
  * jsspec
  * ???
