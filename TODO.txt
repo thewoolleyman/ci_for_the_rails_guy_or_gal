@@ -1,3 +1,13 @@
+Screenshot of New Millennium JsUnit UI + tag
+
+More l337x0rz toolz:
+ * selenium gem + polonium + funkytown
+ * jsspec
+ * ???
+ * screwUnit
+ * JQuery
+
+
 Lightning Talk format
 
 Pecha Kucha (sp?) format
