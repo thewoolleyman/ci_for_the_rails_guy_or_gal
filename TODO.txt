@@ -1,4 +1,5 @@
 * update ccrb to newest release.
+* install selenium gem
 
 Screenshot of New Millennium JsUnit UI + tag
 
