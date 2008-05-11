@@ -1,29 +1,9 @@
-* update ccrb to newest release.
-* install selenium gem
-
-Screenshot of New Millennium JsUnit UI + tag
-
-More l337z0rz toolz:
- * selenium gem + polonium + funkytown
- * jsspec
- * ???
- * screwUnit
- * JQuery
-
-
 Lightning Talk format
 
 Pecha Kucha (sp?) format
 
 Update text / Test:
-* Use selenium gem?
-* "Cautious Optimism" - ask Alex/others for a 2-3 slide summary, in 60 point type or higher
 * Add notes to presentation?
-* Mention ways to avoid false positives (rake task exec, system() || raise, File.sh || raise)
-
-
-
-copy and paste pdf/newlines
 
 cruise.rb - mention hooks for metrics into notification
 roundhouse - hosted ci+svn services - campfire
