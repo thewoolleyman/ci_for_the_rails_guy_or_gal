@@ -1,3 +1,5 @@
+Update CI_Downloads image with latest Selenium Gem
+
 Lightning Talk format
 
 Pecha Kucha (sp?) format
