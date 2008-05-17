@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Major Version</key><integer>1</integer>
+	<key>Minor Version</key><integer>1</integer>
+	<key>Application Version</key><string>7.6.2</string>
+	<key>Features</key><integer>5</integer>
+	<key>Show Content Ratings</key><true/>
+	<key>Music Folder</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/</string>
+	<key>Library Persistent ID</key><string>02D00CFF058480DE</string>
+	<key>Tracks</key>
+	<dict>
+		<key>474</key>
+		<dict>
+			<key>Track ID</key><integer>474</integer>
+			<key>Name</key><string>My Humps</string>
+			<key>Artist</key><string>Black Eyed Peas</string>
+			<key>Album Artist</key><string>Black Eyed Peas</string>
+			<key>Composer</key><string>David Payton/William Adams</string>
+			<key>Album</key><string>Monkey Business</string>
+			<key>Genre</key><string>Hip-Hop</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8752272</integer>
+			<key>Total Time</key><integer>327000</integer>
+			<key>Track Number</key><integer>5</integer>
+			<key>Year</key><integer>2005</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:26Z</date>
+			<key>Date Added</key><date>2006-08-31T07:01:15Z</date>
+			<key>Bit Rate</key><integer>214</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>6</integer>
+			<key>Play Date</key><integer>3293747314</integer>
+			<key>Play Date UTC</key><date>2008-05-16T08:48:34Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2008-05-16T08:42:11Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>70D4BCEE2FFE7828</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Monkey%20Business/05%20My%20Humps.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>482</key>
+		<dict>
+			<key>Track ID</key><integer>482</integer>
+			<key>Name</key><string>Hella Good</string>
+			<key>Artist</key><string>No Doubt</string>
+			<key>Album Artist</key><string>No Doubt</string>
+			<key>Composer</key><string>Chad Hugo/Gwen Stefani/P. Williams/Tony Kanal</string>
+			<key>Album</key><string>Rock Steady</string>
+			<key>Genre</key><string>Ska</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4853402</integer>
+			<key>Total Time</key><integer>242625</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2001</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:27Z</date>
+			<key>Date Added</key><date>2006-08-31T07:01:15Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>www.simplemp3s.com</string>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3293741335</integer>
+			<key>Play Date UTC</key><date>2008-05-16T07:08:55Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2008-05-16T08:42:22Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>70D4BCEE2FFE7834</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Rock%20Steady/02%20Hella%20Good.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>490</key>
+		<dict>
+			<key>Track ID</key><integer>490</integer>
+			<key>Name</key><string>My Doorbell</string>
+			<key>Artist</key><string>The White Stripes</string>
+			<key>Album Artist</key><string>The White Stripes</string>
+			<key>Composer</key><string>Jack III White</string>
+			<key>Album</key><string>Get Behind Me Satan (Advance)</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5713920</integer>
+			<key>Total Time</key><integer>238001</integer>
+			<key>Track Number</key><integer>3</integer>
+			<key>Year</key><integer>2005</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:27Z</date>
+			<key>Date Added</key><date>2006-08-31T07:01:16Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>9</integer>
+			<key>Play Date</key><integer>3293741297</integer>
+			<key>Play Date UTC</key><date>2008-05-16T07:08:17Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2008-05-16T08:42:07Z</date>
+			<key>Compilation</key><true/>
+			<key>Sort Album Artist</key><string>White Stripes</string>
+			<key>Sort Artist</key><string>White Stripes</string>
+			<key>Persistent ID</key><string>70D4BCEE2FFE783E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Get%20Behind%20Me%20Satan%20(Advance)/03%20My%20Doorbell.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>541</key>
+		<dict>
+			<key>Track ID</key><integer>541</integer>
+			<key>Name</key><string>Shake it up Baby</string>
+			<key>Artist</key><string>Beatles</string>
+			<key>Album</key><string>FASDAY 2006</string>
+			<key>Kind</key><string>AIFF audio file</string>
+			<key>Size</key><integer>27414988</integer>
+			<key>Total Time</key><integer>155400</integer>
+			<key>Date Modified</key><date>2007-08-14T11:39:28Z</date>
+			<key>Date Added</key><date>2006-12-29T06:38:43Z</date>
+			<key>Bit Rate</key><integer>1411</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3282264927</integer>
+			<key>Play Date UTC</key><date>2008-01-04T11:15:27Z</date>
+			<key>Skip Count</key><integer>3</integer>
+			<key>Skip Date</key><date>2007-08-16T13:43:46Z</date>
+			<key>Persistent ID</key><string>174B6E2623CB4646</string>
+			<key>Track Type</key><string>File</string>
+			<key>File Type</key><integer>1095321158</integer>
+			<key>File Creator</key><integer>1752133483</integer>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Beatles/FASDAY%202006/Shake%20it%20up%20Baby.aiff</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>553</key>
+		<dict>
+			<key>Track ID</key><integer>553</integer>
+			<key>Name</key><string>He Lifts Me Up</string>
+			<key>Artist</key><string>Audio Adrenaline</string>
+			<key>Genre</key><string>Blues</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3033448</integer>
+			<key>Total Time</key><integer>189466</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:20Z</date>
+			<key>Date Added</key><date>2006-12-29T06:38:47Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3293742454</integer>
+			<key>Play Date UTC</key><date>2008-05-16T07:27:34Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>174B6E2623CB468B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Unknown%20Album/He%20Lifts%20Me%20Up.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>560</key>
+		<dict>
+			<key>Track ID</key><integer>560</integer>
+			<key>Name</key><string>Wake Me Up When September Comes</string>
+			<key>Artist</key><string>Greenday</string>
+			<key>Album</key><string>American Idiot</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>11428144</integer>
+			<key>Total Time</key><integer>285701</integer>
+			<key>Track Number</key><integer>11</integer>
+			<key>Date Modified</key><date>2008-05-16T08:39:38Z</date>
+			<key>Date Added</key><date>2006-12-29T06:38:48Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>2</integer>
+			<key>Play Date</key><integer>3291157384</integer>
+			<key>Play Date UTC</key><date>2008-04-16T09:23:04Z</date>
+			<key>Persistent ID</key><string>174B6E2623CB46AA</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Greenday/American%20Idiot/11%20Wake%20Me%20Up%20When%20September%20Comes.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>565</key>
+		<dict>
+			<key>Track ID</key><integer>565</integer>
+			<key>Name</key><string>How far is Heaven</string>
+			<key>Artist</key><string>Los Lonely Boys</string>
+			<key>Album Artist</key><string>Los Lonely Boys</string>
+			<key>Composer</key><string>Henry Garza/JoJo Garza/Ringo Garza</string>
+			<key>Album</key><string>Los Lonely Boys</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3905915</integer>
+			<key>Total Time</key><integer>243983</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>2004</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:26Z</date>
+			<key>Date Added</key><date>2006-12-29T06:38:49Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>14</integer>
+			<key>Play Date</key><integer>3293743972</integer>
+			<key>Play Date UTC</key><date>2008-05-16T07:52:52Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2007-08-14T15:04:08Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>174B6E2623CB46C1</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Los%20Lonely%20Boys/02%20How%20far%20is%20Heaven.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>646</key>
+		<dict>
+			<key>Track ID</key><integer>646</integer>
+			<key>Name</key><string>Come on Eileen</string>
+			<key>Artist</key><string>Save Ferris</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>5013376</integer>
+			<key>Total Time</key><integer>250644</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:25Z</date>
+			<key>Date Added</key><date>2007-01-18T08:16:06Z</date>
+			<key>Bit Rate</key><integer>160</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Comments</key><string>1-3</string>
+			<key>Play Count</key><integer>5</integer>
+			<key>Play Date</key><integer>3293743249</integer>
+			<key>Play Date UTC</key><date>2008-05-16T07:40:49Z</date>
+			<key>Skip Count</key><integer>4</integer>
+			<key>Skip Date</key><date>2007-08-16T13:43:35Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>E10EFAD99EC032DC</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Unknown%20Album/Come%20on%20Eileen.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>710</key>
+		<dict>
+			<key>Track ID</key><integer>710</integer>
+			<key>Name</key><string>Welcome to the Jungle</string>
+			<key>Artist</key><string>Guns 'n' Roses</string>
+			<key>Album Artist</key><string>Guns N' Roses</string>
+			<key>Composer</key><string>Guns N' Roses</string>
+			<key>Album</key><string>Appetite for Destruction</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6558506</integer>
+			<key>Total Time</key><integer>273162</integer>
+			<key>Track Number</key><integer>1</integer>
+			<key>Year</key><integer>1987</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:27Z</date>
+			<key>Date Added</key><date>2007-01-18T08:16:13Z</date>
+			<key>Bit Rate</key><integer>192</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3293743729</integer>
+			<key>Play Date UTC</key><date>2008-05-16T07:48:49Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2008-05-16T07:15:23Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>E10EFAD99EC033C7</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Appetite%20for%20Destruction/01%20Welcome%20to%20the%20Jungle.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>724</key>
+		<dict>
+			<key>Track ID</key><integer>724</integer>
+			<key>Name</key><string>Family Tradition</string>
+			<key>Artist</key><string>Hank Williams Jr.</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3776738</integer>
+			<key>Total Time</key><integer>236042</integer>
+			<key>Date Modified</key><date>2008-04-21T01:43:22Z</date>
+			<key>Date Added</key><date>2007-01-18T08:16:15Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3293742999</integer>
+			<key>Play Date UTC</key><date>2008-05-16T07:36:39Z</date>
+			<key>Skip Count</key><integer>2</integer>
+			<key>Skip Date</key><date>2007-08-14T14:14:53Z</date>
+			<key>Persistent ID</key><string>E10EFAD99EC033F5</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Hank%20Williams%20Jr_/Unknown%20Album/Family%20Tradition.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>753</key>
+		<dict>
+			<key>Track ID</key><integer>753</integer>
+			<key>Name</key><string>Spanish Pipedream</string>
+			<key>Artist</key><string>John Prine</string>
+			<key>Album Artist</key><string>John Prine</string>
+			<key>Composer</key><string>John Prine</string>
+			<key>Album</key><string>Great Days: The John Prine Anthology Disc 1</string>
+			<key>Genre</key><string>Rock</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>6443587</integer>
+			<key>Total Time</key><integer>161018</integer>
+			<key>Track Number</key><integer>2</integer>
+			<key>Year</key><integer>1993</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:22Z</date>
+			<key>Date Added</key><date>2007-01-18T08:16:17Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3293478411</integer>
+			<key>Play Date UTC</key><date>2008-05-13T06:06:51Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2008-05-16T08:42:02Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>E10EFAD99EC0344E</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Great%20Days_%20The%20John%20Prine%20Anthology%20Disc%201/02%20Spanish%20Pipedream.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>929</key>
+		<dict>
+			<key>Track ID</key><integer>929</integer>
+			<key>Name</key><string>Institutionalized</string>
+			<key>Artist</key><string>Suicidal Tendencies</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>3598756</integer>
+			<key>Total Time</key><integer>224914</integer>
+			<key>Date Modified</key><date>1998-06-25T07:14:28Z</date>
+			<key>Date Added</key><date>2007-01-18T08:16:36Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3293746274</integer>
+			<key>Play Date UTC</key><date>2008-05-16T08:31:14Z</date>
+			<key>Persistent ID</key><string>E10EFAD99EC0368D</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Suicidal%20Tendencies/Unknown%20Album/Institutionalized.mp3</string>
+			<key>File Folder Count</key><integer>-1</integer>
+			<key>Library Folder Count</key><integer>-1</integer>
+		</dict>
+		<key>960</key>
+		<dict>
+			<key>Track ID</key><integer>960</integer>
+			<key>Name</key><string>Beverly Hills</string>
+			<key>Artist</key><string>Weezer</string>
+			<key>Album Artist</key><string>Weezer</string>
+			<key>Composer</key><string>Rivers Cuomo</string>
+			<key>Album</key><string>Make Believe</string>
+			<key>Genre</key><string>Pop</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>8018057</integer>
+			<key>Total Time</key><integer>200306</integer>
+			<key>Year</key><integer>2005</integer>
+			<key>Date Modified</key><date>2005-11-28T23:30:53Z</date>
+			<key>Date Added</key><date>2007-01-18T08:17:01Z</date>
+			<key>Bit Rate</key><integer>320</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>3</integer>
+			<key>Play Date</key><integer>3293745376</integer>
+			<key>Play Date UTC</key><date>2008-05-16T08:16:16Z</date>
+			<key>Skip Count</key><integer>5</integer>
+			<key>Skip Date</key><date>2008-05-16T08:32:43Z</date>
+			<key>Persistent ID</key><string>E10EFAD99EC038F9</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Weezer/Make%20Believe/Beverly%20Hills.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1049</key>
+		<dict>
+			<key>Track ID</key><integer>1049</integer>
+			<key>Name</key><string>For Whom The Bell Tolls</string>
+			<key>Artist</key><string>Metallica</string>
+			<key>Genre</key><string>Metal</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4959503</integer>
+			<key>Total Time</key><integer>309968</integer>
+			<key>Date Modified</key><date>2008-03-31T04:52:12Z</date>
+			<key>Date Added</key><date>2008-03-31T04:01:35Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3289757458</integer>
+			<key>Play Date UTC</key><date>2008-03-31T04:30:58Z</date>
+			<key>Persistent ID</key><string>67A478E4F005105B</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Metallica/Unknown%20Album/For%20Whom%20The%20Bell%20Tolls.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1069</key>
+		<dict>
+			<key>Track ID</key><integer>1069</integer>
+			<key>Name</key><string>Back In Black</string>
+			<key>Artist</key><string>AC/DC</string>
+			<key>Kind</key><string>MPEG audio file</string>
+			<key>Size</key><integer>4072260</integer>
+			<key>Total Time</key><integer>254380</integer>
+			<key>Date Modified</key><date>2008-05-16T08:47:02Z</date>
+			<key>Date Added</key><date>2008-03-31T05:01:37Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Volume Adjustment</key><integer>197</integer>
+			<key>Equalizer</key><string>Rock</string>
+			<key>Play Count</key><integer>4</integer>
+			<key>Play Date</key><integer>3293744861</integer>
+			<key>Play Date UTC</key><date>2008-05-16T08:07:41Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2008-05-16T08:43:35Z</date>
+			<key>Compilation</key><true/>
+			<key>Persistent ID</key><string>2E915564CC2F3B16</string>
+			<key>Track Type</key><string>File</string>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Unknown%20Album/Back%20In%20Black.mp3</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1102</key>
+		<dict>
+			<key>Track ID</key><integer>1102</integer>
+			<key>Name</key><string>Handlebars</string>
+			<key>Artist</key><string>Flobots</string>
+			<key>Album Artist</key><string>Flobots</string>
+			<key>Composer</key><string>James Laurie, Stephen Brackett, Mackenzie Roberts, Andy Guerrero, Jesse Walker &#38; Kenny Ortiz</string>
+			<key>Album</key><string>Fight With Tools</string>
+			<key>Genre</key><string>Hip Hop/Rap</string>
+			<key>Kind</key><string>Protected AAC audio file</string>
+			<key>Size</key><integer>3411389</integer>
+			<key>Total Time</key><integer>206865</integer>
+			<key>Disc Number</key><integer>1</integer>
+			<key>Disc Count</key><integer>1</integer>
+			<key>Track Number</key><integer>6</integer>
+			<key>Track Count</key><integer>12</integer>
+			<key>Year</key><integer>2008</integer>
+			<key>Date Modified</key><date>2008-05-13T05:52:27Z</date>
+			<key>Date Added</key><date>2008-05-13T01:44:07Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>24</integer>
+			<key>Play Date</key><integer>3293771791</integer>
+			<key>Play Date UTC</key><date>2008-05-16T15:36:31Z</date>
+			<key>Release Date</key><date>2008-04-15T07:00:00Z</date>
+			<key>Normalization</key><integer>11992</integer>
+			<key>Compilation</key><true/>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>077101C4F6BB7865</string>
+			<key>Explicit</key><true/>
+			<key>Track Type</key><string>File</string>
+			<key>Protected</key><true/>
+			<key>Purchased</key><true/>
+			<key>File Creator</key><integer>1752133483</integer>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/Compilations/Fight%20With%20Tools/06%20Handlebars.m4p</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+		<key>1103</key>
+		<dict>
+			<key>Track ID</key><integer>1103</integer>
+			<key>Name</key><string>Hey Ya!</string>
+			<key>Artist</key><string>OutKast</string>
+			<key>Album Artist</key><string>OutKast</string>
+			<key>Composer</key><string>André Benjamin</string>
+			<key>Album</key><string>Speakerboxxx/The Love Below</string>
+			<key>Genre</key><string>Hip Hop/Rap</string>
+			<key>Kind</key><string>Protected AAC audio file</string>
+			<key>Size</key><integer>3904852</integer>
+			<key>Total Time</key><integer>235123</integer>
+			<key>Disc Number</key><integer>2</integer>
+			<key>Disc Count</key><integer>2</integer>
+			<key>Track Number</key><integer>9</integer>
+			<key>Track Count</key><integer>21</integer>
+			<key>Year</key><integer>2007</integer>
+			<key>Date Modified</key><date>2008-05-16T08:23:27Z</date>
+			<key>Date Added</key><date>2008-05-16T08:23:21Z</date>
+			<key>Bit Rate</key><integer>128</integer>
+			<key>Sample Rate</key><integer>44100</integer>
+			<key>Play Count</key><integer>1</integer>
+			<key>Play Date</key><integer>3293747394</integer>
+			<key>Play Date UTC</key><date>2008-05-16T08:49:54Z</date>
+			<key>Skip Count</key><integer>1</integer>
+			<key>Skip Date</key><date>2008-05-16T08:42:32Z</date>
+			<key>Release Date</key><date>2007-12-31T08:00:00Z</date>
+			<key>Normalization</key><integer>34085</integer>
+			<key>Artwork Count</key><integer>1</integer>
+			<key>Persistent ID</key><string>8904F72ABEAD6F05</string>
+			<key>Track Type</key><string>File</string>
+			<key>Protected</key><true/>
+			<key>Purchased</key><true/>
+			<key>File Creator</key><integer>1752133483</integer>
+			<key>Location</key><string>file://localhost/Users/woolley/Music/iTunes/iTunes%20Music/OutKast/Speakerboxxx_The%20Love%20Below/2-09%20Hey%20Ya!.m4p</string>
+			<key>File Folder Count</key><integer>4</integer>
+			<key>Library Folder Count</key><integer>1</integer>
+		</dict>
+	</dict>
+	<key>Playlists</key>
+	<array>
+		<dict>
+			<key>Name</key><string>railsconf_2008_warmup_mix</string>
+			<key>Playlist ID</key><integer>2794</integer>
+			<key>Playlist Persistent ID</key><string>077101C4F6BB78F1</string>
+			<key>All Items</key><true/>
+			<key>Playlist Items</key>
+			<array>
+				<dict>
+					<key>Track ID</key><integer>1049</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>553</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>646</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>724</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>929</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>753</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>710</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>490</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>560</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>474</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>565</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>482</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>960</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1103</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>541</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1069</integer>
+				</dict>
+				<dict>
+					<key>Track ID</key><integer>1102</integer>
+				</dict>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
