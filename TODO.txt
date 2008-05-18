@@ -1,11 +1,19 @@
-Update CI_Downloads image with latest Selenium Gem
 
-Lightning Talk format
+RailsConf:
+* Doublecheck that VMWare keys and VMs work on all platforms
+* Doublecheck README for file names, etc
+* Doublecheck that all files referenced in README are uploaded
+  * openoffice
+  * vmware
+  * Ubuntu ISO
+  * ???
+* Burn DVDs
+* Update notes
+* Practice
 
-Pecha Kucha (sp?) format
-
-Update text / Test:
-* Add notes to presentation?
-
-cruise.rb - mention hooks for metrics into notification
-roundhouse - hosted ci+svn services - campfire
+Future:
+* Lightning Talk / Pecha Kucha format
+* cruise.rb - mention hooks for metrics into notification / RSS feed
+* Stuff I haven't looked at: 
+  * roundhouse - hosted ci+svn services?
+  * campfire+tinder API? 

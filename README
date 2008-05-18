@@ -6,10 +6,10 @@ Quick Start Instructions:
 -------------------------
 - Get the Tutorial Resources off of a DVD, USB Flash Drive or download from http://thewoolleyweb.com/ci_for_the_rails_guy_or_gal
 - Install VMware and get a license key from https://www.vmware.com/tryvmware/
-  - For Windows, install VMware server - both the "installer" and "win32 client"
+  - For Windows, install the free VMware player, or the VMware server if you want to create new VMs
   - For Mac, install VMware Fusion
 - Install a RAR uncompress utility from /tools
-- Uncompress the Virtual Machine /virtual_machines/Ubuntu_With_CI_Downloads.rar
+- Uncompress the Virtual Machine /virtual_machines/Ubuntu_With_CI_Downloads.vmwarevm.rar
 - Review instructional screenshots for opening a VM copy in /presentation/screenshots/03_virtual_machine_copy
 - Open the uncompressed .vmx file "Ubuntu_With_CI_Downloads.vmx" in VMware
 - Start following the Presentation in /presentation/ci_for_the_rails_guy_or_gal.pdf
@@ -19,7 +19,7 @@ Detailed Instructions:
 ----------------------
 Source on GitHub:
 
-- This presentation (but no install files or virtual machine images) is available on GitHub: http://github.com/thewoolleyman/ci_for_the_rails_guy_or_gal
+- This presentation (but no big install files or virtual machine images) is available on GitHub: http://github.com/thewoolleyman/ci_for_the_rails_guy_or_gal
 
 Tutorial Resource Directory Contents:
 
@@ -35,16 +35,16 @@ Tutorial Resource Directory Contents:
   - open_office: OpenOffice install packages for multiple platforms
   - stuffit: RAR extract program for Mac
   - ubuntu_cd_iso: ISO image of Ubuntu Desktop 7.10
-  - vmware: Install packages and URL for getting a VMWare Evaluation Key
+  - vmware: Install packages and URL for getting a VMWare Evaluation Key, and some recent keys that may work
   - winrar: RAR extract program for Windows
 - virtual machines: Virtual Machine Images
-  - Ubuntu_Base.rar: Base Ubuntu Install
-  - Ubuntu_With_CI_Downloads.rar: Base Ubuntu with VMWare Tools and all downloads required for tutorial, but no steps completed
-  - Completed_CI_Tutorial.rar: Completed Tutorial with all steps completed
+  - Ubuntu_Base.vmwarevm.rar: Base Ubuntu Install
+  - Ubuntu_With_CI_Downloads.vmwarevm.rar: Base Ubuntu with VMWare Tools and all downloads required for tutorial, but no steps completed
+  - Completed_CI_Tutorial.vmwarevm.rar: Completed Tutorial with all steps already performed
 
 A. Install VMware
-- The /tools/vmware directory has installation packages and a pointer to the URL to sign up for a VMware Evaluation Key.  VMware Server is for windows, and VMWare Fusion is for Mac.  They are both currently free, but may not be in the future.
-  - For Windows, install VMware Server, both the "installation" and "win32 client" packages.  You will then start the client app, and connect to the local server.
+- The /tools/vmware directory has installation packages and a pointer to the URL to sign up for a VMware Evaluation Key.  VMware Player and Server are for windows, and VMWare Fusion is for Mac.  VMware Player is free, but can only play existing VMs, not create new ones.  Recent (2 weeks before RailsConf 2008) trial keys are in this directory, but they may not work.
+  - For Windows, install VMware Player or Server.  For server, you will start the client app, and connect to the local server.
   - For Mac, install the VMware fusion .dmg file.
 
 B. Install VMware Image
