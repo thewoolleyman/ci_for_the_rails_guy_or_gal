@@ -19,7 +19,7 @@ Detailed Instructions:
 ----------------------
 Source on GitHub:
 
-- This presentation (but no big install files or virtual machine images) is available on GitHub: http://github.com/thewoolleyman/ci_for_the_rails_guy_or_gal
+- The latest version of this presentation (but no big install files or virtual machine images) is available on GitHub: http://github.com/thewoolleyman/ci_for_the_rails_guy_or_gal
 
 Tutorial Resource Directory Contents:
 
@@ -32,6 +32,7 @@ Tutorial Resource Directory Contents:
     - 02_ubuntu_vm_setup_screenshots: Screenshots of completing Ubuntu VM installation
     - 03_virtual_machine_copy: Screenshots of copying an existing VM
 - tools: Software and other useful downloads
+  - font: FreeSansBold.ttf font required for OpenOffice presentation to render correctly on some platforms, like Linux.
   - open_office: OpenOffice install packages for multiple platforms
   - stuffit: RAR extract program for Mac
   - ubuntu_cd_iso: ISO image of Ubuntu Desktop 7.10
