@@ -3,8 +3,6 @@ RailsConf:
 * Doublecheck that VMWare keys and VMs work on all platforms
 * Doublecheck README for file names, etc
 * Doublecheck that all files referenced in README are uploaded
-  * openoffice
-  * vmware
   * Ubuntu ISO
   * ???
 * Burn DVDs
