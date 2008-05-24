@@ -13,6 +13,7 @@ Quick Start Instructions:
 - Review instructional screenshots for opening a VM copy in /presentation/screenshots/03_virtual_machine_copy
 - Open the uncompressed .vmx file "Ubuntu_With_CI_Downloads.vmx" in VMware
 - Start following the Presentation in /presentation/ci_for_the_rails_guy_or_gal.pdf
+- ID/Password are ci/password
 
 ----------------------
 Detailed Instructions:
@@ -68,3 +69,4 @@ B.2 Instructions for starting from scratch
 C. Completing Tutorial
 
 - Use the Virtual Machine and follow instructions in presentation
+- ID/Password are ci/password
