@@ -2,12 +2,17 @@ Tutorial: CI for the Rails Guy or Gal
 README for Tutorial Resources
 
 -------------------------
+Errata:
+-------------------------
+- Windows instructions for VMware Server are outdated for the VMware server 2.0 Beta (major changes from 1.x).  However, VMware Player is easy to use and works fine with the included CI VMs.
+
+-------------------------
 Quick Start Instructions:
 -------------------------
 - Get the Tutorial Resources off of a DVD, USB Flash Drive or download from http://thewoolleyweb.com/ci_for_the_rails_guy_or_gal
 - Install VMware and get a license key from https://www.vmware.com/tryvmware/
-  - For Windows, install the free VMware player, or the VMware server if you want to create new VMs
   - For Mac, install VMware Fusion
+  - For Windows, install the free VMware player, or the VMware server if you want to create new VMs.  VMware player is recommended; VMware Server is more complicated (see details below).
 - Install a RAR uncompress utility from /tools
 - Uncompress the Virtual Machine /virtual_machines/Ubuntu_With_CI_Downloads.vmwarevm.rar
 - Review instructional screenshots for opening a VM copy in /presentation/screenshots/03_virtual_machine_copy
@@ -29,7 +34,7 @@ Tutorial Resource Directory Contents:
 - presentation: Contains presentation in OpenOffice and PDF format
   - screenshots:   
     - 01a_mac_vmware_fusion_screenshots: Screenshots of Ubuntu VM Creation on Mac VMware Fusion
-    - 01b_win_vmware_server_screenshots: Screenshots of Ubuntu VM Creation on Windows VMware Server
+    - 01b_win_vmware_server_screenshots: Screenshots of Ubuntu VM Creation on Windows VMware Server (NOTE: Outdated for VMware Server 2 Beta)
     - 02_ubuntu_vm_setup_screenshots: Screenshots of completing Ubuntu VM installation
     - 03_virtual_machine_copy: Screenshots of copying an existing VM
 - tools: Software and other useful downloads
@@ -46,8 +51,8 @@ Tutorial Resource Directory Contents:
 
 A. Install VMware
 - The /tools/vmware directory has installation packages and a pointer to the URL to sign up for a VMware Evaluation Key.  VMware Player and Server are for windows, and VMWare Fusion is for Mac.  VMware Player is free, but can only play existing VMs, not create new ones.  Recent (2 weeks before RailsConf 2008) trial keys are in this directory, but they may not work.
-  - For Windows, install VMware Player or Server.  For server, you will start the client app, and connect to the local server.
   - For Mac, install the VMware fusion .dmg file.
+  - For Windows, install VMware Player, it's the easiest way to open a pre-created VM.  If you want to create VMs from scratch, you'll have to use VMware server, but this is more complicated, and you're mostly on your own.  Important hints: 1) Userid/Password for web ui are your local OS id/pw.  2) To open an existing VM, copy the *.vmwarevm folder to your 'datastore' - find the local directory for this in the "summary" page. 
 
 B. Install VMware Image
 
